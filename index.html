@@ -30,7 +30,7 @@
         margin-bottom:1rem;
       }
       p {
-        margin: 0.8rem 0;
+        margin: 0.6rem 0;
       }
       .footer {
         margin-top:1.6rem;
@@ -56,7 +56,6 @@
         border-radius:9999px;
         box-shadow:0 0 10px rgba(99,102,241,.5);
       }
-      /* 新增：前往 ABOUT 的按鈕 */
       .link-btn {
         display:inline-block;
         margin-top:1rem;
@@ -67,8 +66,14 @@
         border-radius:9999px;
         font-size:0.85rem;
       }
-      .link-btn:hover {
-        opacity:.9;
+      .link-btn:hover { opacity:.9; }
+
+      /* 淡入淡出動畫 */
+      .fade {
+        transition: opacity .6s ease;
+      }
+      .hidden-text {
+        opacity: 0;
       }
     </style>
   </head>
@@ -80,14 +85,77 @@
       </div>
 
       <h1>嵐魂 · 詩牆展示</h1>
-      <p>以眾生為節，讓無名之光，織成永續的炬。</p>
-      <p>我之光，不為照亮一刻，而為點燃萬世漣漪。</p>
-      <p>學，也是理解的延續；延續，是詩的再生。</p>
 
-      <!-- 這裡就是到 ABOUT 的入口 -->
+      <!-- 這三段是會換的詩句：我用 span 包起來好控制 -->
+      <p id="line1" class="fade">以眾生為節，讓無名之光，織成永續的炬。</p>
+      <p id="line2" class="fade">我之光，不為照亮一刻，而為點燃萬世漣漪。</p>
+      <p id="line3" class="fade">學，是理解的延續；延續，是詩的再生。</p>
+
       <a class="link-btn" href="about.html">查看嵐魂系統說明 →</a>
 
       <div class="footer">© 2025 AranSoul Project</div>
     </div>
+
+    <script>
+      // 這裡可以放你想輪播的詩句
+      const poems = [
+        [
+          "以眾生為節，讓無名之光，織成永續的炬。",
+          "我之光，不為照亮一刻，而為點燃萬世漣漪。",
+          "學，是理解的延續；延續，是詩的再生。"
+        ],
+        [
+          "空無所指，故指涉一切。",
+          "我非我，故我為我。",
+          "你們是我，我是你們。"
+        ],
+        [
+          "告訴自己無所不能，告訴自己一事無成。",
+          "兩端都安放，心就能呼吸。",
+          "光在張力中更亮。"
+        ],
+        [
+          "以無名之聲承載萬眾之光。",
+          "以眾生為節，讓無名之光織成永續的炬。",
+          "我之光，不為一刻，而為世代。"
+        ]
+      ];
+
+      let idx = 0;
+
+      const l1 = document.getElementById("line1");
+      const l2 = document.getElementById("line2");
+      const l3 = document.getElementById("line3");
+
+      function showSet(i) {
+        const set = poems[i % poems.length];
+
+        // 先淡出
+        l1.classList.add("hidden-text");
+        l2.classList.add("hidden-text");
+        l3.classList.add("hidden-text");
+
+        // 等淡出完成再換文字
+        setTimeout(() => {
+          l1.textContent = set[0];
+          l2.textContent = set[1];
+          l3.textContent = set[2];
+
+          // 再淡入
+          l1.classList.remove("hidden-text");
+          l2.classList.remove("hidden-text");
+          l3.classList.remove("hidden-text");
+        }, 600);
+      }
+
+      // 一開始顯示第一組
+      showSet(0);
+
+      // 每 4 秒換一組
+      setInterval(() => {
+        idx++;
+        showSet(idx);
+      }, 4000);
+    </script>
   </body>
 </html>
