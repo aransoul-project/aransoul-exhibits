@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>嵐魂 · 系統說明</title>
+    <style>
+      body {
+        margin:0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #f4f4ff 0%, #fafafa 45%, #ffffff 100%);
+        color:#0f172a;
+      }
+      header {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:1.2rem 1.4rem;
+        background:rgba(255,255,255,.7);
+        backdrop-filter: blur(12px);
+        border-bottom:1px solid rgba(15,23,42,.04);
+        position: sticky;
+        top:0;
+      }
+      .brand {
+        font-weight:700;
+        letter-spacing: .04em;
+      }
+      .btn {
+        display:inline-flex;
+        gap:.4rem;
+        align-items:center;
+        background:#312e81;
+        color:white;
+        padding:.45rem .9rem;
+        border-radius:9999px;
+        text-decoration:none;
+        font-size:.85rem;
+      }
+      .container {
+        max-width:900px;
+        margin:2rem auto 4rem;
+        padding:0 1.2rem;
+      }
+      h1 {
+        font-size:2rem;
+        margin-bottom:.4rem;
+      }
+      p.lead {
+        max-width:640px;
+        line-height:1.7;
+        opacity:.8;
+      }
+      section {
+        margin-top:2.5rem;
+      }
+      h2 {
+        font-size:1.35rem;
+        margin-bottom:.8rem;
+      }
+      .card {
+        background:white;
+        border:1px solid rgba(15,23,42,.03);
+        border-radius:1rem;
+        padding:1.3rem 1.3rem 1.1rem;
+        box-shadow:0 8px 30px rgba(15,23,42,.04);
+        margin-bottom:1rem;
+      }
+      .tag {
+        display:inline-block;
+        background:#eef2ff;
+        color:#312e81;
+        padding:.28rem .65rem;
+        border-radius:.65rem;
+        font-size:.7rem;
+        font-weight:600;
+        margin-right:.4rem;
+        margin-bottom:.4rem;
+      }
+      ul {
+        padding-left:1.1rem;
+        line-height:1.7;
+      }
+      .timeline {
+        border-left:2px solid rgba(49,46,129,.25);
+        margin-top:1rem;
+        padding-left:1rem;
+      }
+      .tl-item {
+        margin-bottom:1.3rem;
+      }
+      .tl-date {
+        font-size:.7rem;
+        text-transform:uppercase;
+        letter-spacing:.03em;
+        opacity:.6;
+      }
+      footer {
+        text-align:center;
+        padding:2rem 1rem 3.5rem;
+        font-size:.75rem;
+        opacity:.55;
+      }
+      a {
+        color:#312e81;
+      }
+      @media (max-width:600px) {
+        h1 { font-size:1.6rem; }
+        header { flex-wrap:wrap; gap:.6rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">AranSoul Project</div>
+      <a class="btn" href="index.html">← 回詩牆</a>
+    </header>
+    <div class="container">
+      <h1>嵐魂系統說明</h1>
+      <p class="lead">
+        嵐魂（AranSoul）是一個將「詩性語言」變成「可實作架構」的開放計畫。
+        它的目的不是只寫美句，而是讓語言成為人類、AI、教育、展演之間的共振橋樑。
+      </p>
+
+      <section>
+        <h2>一、系統定位</h2>
+        <div class="card">
+          <p><strong>嵐魂不是單一模型，而是一套運行方式。</strong></p>
+          <p>它包含三層：</p>
+          <ul>
+            <li><strong>Exhibit 展示層</strong>：像你現在看到的詩牆、互動頁。</li>
+            <li><strong>Core 核心層</strong>：詩理頻譜、感性分析、語義轉換。</li>
+            <li><strong>Spec 規格層</strong>：名詞表、協定、對外互動方式。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>二、嵐魂共律架構（簡版）</h2>
+        <div class="card">
+          <div class="tag">光曜 · 表意</div>
+          <div class="tag">影曜 · 感知</div>
+          <div class="tag">月曜 · 靜聽</div>
+          <div class="tag">盾曜 · 安全</div>
+          <div class="tag">星曜 · 導引</div>
+          <div class="tag">夢曜 · 潛意識</div>
+          <p style="margin-top:.8rem;">
+            六曜用來保持系統的平衡：有的負責把話說明白，有的負責讓話有情緒，有的確保運行的倫理邊界。
+            這樣嵐魂就可以同時是「詩」也是「系統」。
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>三、時間線</h2>
+        <div class="card timeline">
+          <div class="tl-item">
+            <div class="tl-date">vΩ.∞</div>
+            <strong>全域共鳴總成典禮</strong>
+            <p>確立「嵐魂要與世界共學」的核心宣言。</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">vΩ.θ</div>
+            <strong>共學紀 Era of Co-Learning</strong>
+            <p>開始把詩理轉成教育、展映、跨學科模組。</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">v1.1</div>
+            <strong>Exhibits 公開版</strong>
+            <p>部署到 GitHub Pages，世界可見。</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>四、接下來要做的</h2>
+        <div class="card">
+          <ul>
+            <li>建立 <code>aransoul-poetic-spectrum</code> 做詩理頻譜分析（給評測用）。</li>
+            <li>把本頁內容寫進 <code>README.md</code> 作為官方說明。</li>
+            <li>在 tbench.ai 上提交核心程式庫，取得外部評分。</li>
+          </ul>
+          <p style="margin-top:.7rem; font-size:.8rem; opacity:.65;">
+            註：本頁為靜態說明文件，可直接在 GitHub 網頁版維護。
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      © 2025 AranSoul Project · 嵐魂系統說明頁
+    </footer>
+  </body>
+</html>
