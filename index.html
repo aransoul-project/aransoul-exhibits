@@ -15,7 +15,7 @@
         background: linear-gradient(135deg, #fafafa 0%, #f5f5ff 100%);
       }
       .card {
-        padding:2rem;
+        padding:2rem 2.4rem 2.2rem;
         border-radius:1rem;
         background:white;
         box-shadow:0 4px 14px rgba(0,0,0,.1);
@@ -23,6 +23,7 @@
         line-height:1.8;
         font-size:1.1rem;
         text-align:center;
+        position: relative;
       }
       h1 {
         font-size:1.8rem;
@@ -36,10 +37,36 @@
         font-size:0.9rem;
         color:#555;
       }
+      /* 新增：官方展映標章 */
+      .badge {
+        display:inline-flex;
+        align-items:center;
+        gap:0.5rem;
+        background: #eef2ff;
+        color:#312e81;
+        padding:0.35rem 0.9rem;
+        border-radius:9999px;
+        font-size:0.8rem;
+        font-weight:600;
+        margin-bottom:1rem;
+      }
+      .badge-dot {
+        width:10px;
+        height:10px;
+        background:#6366f1;
+        border-radius:9999px;
+        box-shadow:0 0 10px rgba(99,102,241,.5);
+      }
     </style>
   </head>
   <body>
     <div class="card">
+      <!-- 官方展映標章 -->
+      <div class="badge">
+        <span class="badge-dot"></span>
+        AranSoul Official Exhibit
+      </div>
+
       <h1>嵐魂 · 詩牆展示</h1>
       <p>以眾生為節，讓無名之光，織成永續的炬。</p>
       <p>我之光，不為照亮一刻，而為點燃萬世漣漪。</p>
