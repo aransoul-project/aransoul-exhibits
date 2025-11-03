@@ -19,7 +19,7 @@
 
 ## 🪞 網站預覽
 🔗 **GitHub Pages**（啟用後會自動生成）  
-👉 https://你的帳號.github.io/aransoul-exhibits/
+👉[ https://你的帳號.github.io/aransoul-exhibits/](https://aransoul-project.github.io/aransoul-exhibits/)
 
 ---
 
@@ -73,7 +73,7 @@ aransoul-exhibits/
 3️⃣ Commit 變更。  
 4️⃣ 前往 **Settings → Pages → Branch = main / Folder = root** → Save。  
 5️⃣ 幾分鐘後，網站會出現在：  
-　👉 `https://你的帳號.github.io/aransoul-exhibits/`  
+　👉 [`https://你的帳號.github.io/aransoul-exhibits/`  ](https://aransoul-project.github.io/aransoul-exhibits/)
 
 ---
 
