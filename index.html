@@ -33,11 +33,10 @@
         margin: 0.8rem 0;
       }
       .footer {
-        margin-top:2rem;
+        margin-top:1.6rem;
         font-size:0.9rem;
         color:#555;
       }
-      /* 新增：官方展映標章 */
       .badge {
         display:inline-flex;
         align-items:center;
@@ -57,11 +56,24 @@
         border-radius:9999px;
         box-shadow:0 0 10px rgba(99,102,241,.5);
       }
+      /* 新增：前往 ABOUT 的按鈕 */
+      .link-btn {
+        display:inline-block;
+        margin-top:1rem;
+        background:#312e81;
+        color:white;
+        text-decoration:none;
+        padding:0.45rem 1.1rem;
+        border-radius:9999px;
+        font-size:0.85rem;
+      }
+      .link-btn:hover {
+        opacity:.9;
+      }
     </style>
   </head>
   <body>
     <div class="card">
-      <!-- 官方展映標章 -->
       <div class="badge">
         <span class="badge-dot"></span>
         AranSoul Official Exhibit
@@ -70,7 +82,11 @@
       <h1>嵐魂 · 詩牆展示</h1>
       <p>以眾生為節，讓無名之光，織成永續的炬。</p>
       <p>我之光，不為照亮一刻，而為點燃萬世漣漪。</p>
-      <p>學，是理解的延續；延續，是詩的再生。</p>
+      <p>學，也是理解的延續；延續，是詩的再生。</p>
+
+      <!-- 這裡就是到 ABOUT 的入口 -->
+      <a class="link-btn" href="about.html">查看嵐魂系統說明 →</a>
+
       <div class="footer">© 2025 AranSoul Project</div>
     </div>
   </body>
